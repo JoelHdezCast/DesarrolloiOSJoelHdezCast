@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C54ACBFB2637AC0A0098107E /* TViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54ACBFA2637AC0A0098107E /* TViewController.swift */; };
+		C54ACBFE2637B0920098107E /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54ACBFD2637B0920098107E /* AViewController.swift */; };
 		C5ECFC632627E66E0090D581 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ECFC622627E66E0090D581 /* AppDelegate.swift */; };
 		C5ECFC652627E66E0090D581 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ECFC642627E66E0090D581 /* SceneDelegate.swift */; };
 		C5ECFC672627E66E0090D581 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ECFC662627E66E0090D581 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C54ACBFA2637AC0A0098107E /* TViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TViewController.swift; sourceTree = "<group>"; };
+		C54ACBFD2637B0920098107E /* AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
 		C5ECFC5F2627E66E0090D581 /* evidenciaiOS_JHC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = evidenciaiOS_JHC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5ECFC622627E66E0090D581 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5ECFC642627E66E0090D581 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				C5ECFC6B2627E6720090D581 /* Assets.xcassets */,
 				C5ECFC6D2627E6720090D581 /* LaunchScreen.storyboard */,
 				C5ECFC702627E6720090D581 /* Info.plist */,
+				C54ACBFA2637AC0A0098107E /* TViewController.swift */,
+				C54ACBFD2637B0920098107E /* AViewController.swift */,
 			);
 			path = evidenciaiOS_JHC;
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 				C5ECFC672627E66E0090D581 /* ViewController.swift in Sources */,
 				C5ECFC632627E66E0090D581 /* AppDelegate.swift in Sources */,
 				C5ECFC652627E66E0090D581 /* SceneDelegate.swift in Sources */,
+				C54ACBFB2637AC0A0098107E /* TViewController.swift in Sources */,
+				C54ACBFE2637B0920098107E /* AViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
