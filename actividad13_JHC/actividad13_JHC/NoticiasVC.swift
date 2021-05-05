@@ -13,7 +13,7 @@ class NoticiasVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        LeerNoticias.getNoticias { (datos) in
+        LeerNoticias().getNoticias { (datos) in
             self.noticias = datos
             self.tableView.reloadData()
         }

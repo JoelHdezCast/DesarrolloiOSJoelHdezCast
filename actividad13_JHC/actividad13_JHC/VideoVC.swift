@@ -14,7 +14,7 @@ class VideoVC: AVPlayerViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let ligaVideo = "http://walterebert.com/playground/video/hls/sintel-trailer.m3u8"
+        let ligaVideo = "https://cdn.videvo.net/videvo_files/video/free/2015-08/small_watermarked/Smartphone_scrolling_for_Chroma_Key_preview.webm"
         
         let urlvideo = URL(string: ligaVideo)
         

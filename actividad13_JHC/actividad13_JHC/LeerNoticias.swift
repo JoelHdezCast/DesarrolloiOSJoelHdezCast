@@ -12,12 +12,13 @@ class LeerNoticias{
 
 
     func getNoticias(termino:@escaping (_ datos:[String])->()){
-      let liga = "http://api.nytimes.com/svc/mostpopular/v2/mostviewed/arts/30.json?api-key=029bb2ef5c76452bac5b2c3ca06893dd"
+      let liga = "https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=FN3XbxmzuzoGcBG1FG5HPlq8w71t9wNV"
+        
       let url = NSURL(string: liga)!
         URLSession.shared.dataTask(with: url as URL){dato, respuesta, error in
             var titulos:[String] = []
             do{
-                let resultado = try JSONSerialization.jsonObject(with: dato!, options: JSONSerialization.ReadingOptions.mutableLeaves) as! NSDictionary
+                let resultado = try JSONSerialization.jsonObject(with: (dato!), options: JSONSerialization.ReadingOptions.mutableLeaves) as! NSDictionary
             
                 for valor in resultado["results"] as! [NSDictionary]{
                   titulos.append(valor["title"] as! String)
