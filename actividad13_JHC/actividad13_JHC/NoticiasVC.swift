@@ -32,9 +32,9 @@ class NoticiasVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
+        let cell:UITableViewCell = (tableView.dequeueReusableCell(withIdentifier: "celda") as UITableViewCell?)!
         
-        cell.textLabel!.text = self.noticias[indexPath.row]
+        cell.textLabel?.text = self.noticias[indexPath.row]
 
         return cell    }
 
