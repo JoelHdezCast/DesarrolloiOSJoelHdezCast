@@ -26,7 +26,7 @@ class GameScene: SKScene {
         }
         
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        nave.run(SKAction.move(to: CGPoint(x: 0, y: fondo.size.height), duration: 5))
+        nave.run(SKAction.move(to: CGPoint(x: 0, y: fondo.size.height), duration: 8))
         self.nave.position = CGPoint.zero
     }
     override func update(_ currentTime: TimeInterval) {
