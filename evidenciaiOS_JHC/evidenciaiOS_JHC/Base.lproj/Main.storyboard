@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wP9-dp-dhd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wP9-dp-dhd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -35,6 +35,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bh4-4k-ETg">
+                                <rect key="frame" x="156" y="780" width="104" height="44"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Contacto">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9r2-WA-DDR" kind="show" id="2MO-2X-n7f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -42,8 +53,10 @@
                             <constraint firstItem="0NW-cw-8sr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="99d-Kt-ExZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0NW-cw-8sr" secondAttribute="trailing" id="9jK-er-2Lk"/>
                             <constraint firstItem="0NW-cw-8sr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="E6S-gI-e0H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bh4-4k-ETg" secondAttribute="bottom" constant="38" id="JT2-ok-vvh"/>
                             <constraint firstItem="0NW-cw-8sr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RDG-lF-PMm"/>
                             <constraint firstItem="0NW-cw-8sr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aRX-hS-V8c"/>
+                            <constraint firstItem="Bh4-4k-ETg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="myr-TR-NTK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0NW-cw-8sr" secondAttribute="bottom" id="qc4-ZN-v8v"/>
                             <constraint firstItem="0NW-cw-8sr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vSy-8u-qbC"/>
                             <constraint firstItem="0NW-cw-8sr" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="yWc-fH-Yes"/>
@@ -134,6 +147,55 @@
             <point key="canvasLocation" x="1818.840579710145" y="77.678571428571431"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="W3e-VS-0Xs">
+            <objects>
+                <viewController id="9r2-WA-DDR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GZe-cL-CJp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="mF1-Om-COp">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contacto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfX-bJ-Rkm">
+                                <rect key="frame" x="30" y="178" width="147" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.22028609809758185" blue="0.46317747450366464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Telefono: 6681166102" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQ0-qn-NcI">
+                                <rect key="frame" x="65" y="322" width="284" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Direccion: Vicente guerrero #512, sector fatima" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XM-TF-q3y">
+                                <rect key="frame" x="65" y="403" width="284" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="luP-Py-DcS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="luP-Py-DcS" firstAttribute="trailing" secondItem="mF1-Om-COp" secondAttribute="trailing" id="Zh5-Ky-ZrJ"/>
+                            <constraint firstItem="mF1-Om-COp" firstAttribute="top" secondItem="luP-Py-DcS" secondAttribute="top" id="atA-iG-DfX"/>
+                            <constraint firstItem="luP-Py-DcS" firstAttribute="bottom" secondItem="mF1-Om-COp" secondAttribute="bottom" id="hzH-Zj-6a8"/>
+                            <constraint firstItem="mF1-Om-COp" firstAttribute="leading" secondItem="luP-Py-DcS" secondAttribute="leading" id="pGT-ek-hh2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="o1o-cZ-MWz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z13-3f-oiB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="760.71428571428567"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="LdK-KN-NUv">
             <objects>
                 <viewController id="TDH-pO-6gP" customClass="TViewController" customModule="evidenciaiOS_JHC" customModuleProvider="target" sceneMemberID="viewController">
@@ -149,7 +211,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="sDf-eY-tPb">
-                                        <rect key="frame" x="0.0" y="28" width="338" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="338" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sDf-eY-tPb" id="LUE-G8-dKw">
                                             <rect key="frame" x="0.0" y="0.0" width="338" height="43.5"/>
@@ -317,6 +379,9 @@
         </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
